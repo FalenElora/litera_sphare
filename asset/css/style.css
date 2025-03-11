@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --hijautua: #2B6100;
+    --biru: #93BFCF;
+    --birucerah: #8CE0FF;
+    --birumuda: #93BFCF;
+    --black: #1d1c1c;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Posisi vertikal sejajar */
+    justify-content: space-between; /* Logo ke kiri, navbar ke kanan */
+    padding: 1rem 3%;
+    height: 60px; /* Pastikan header memiliki tinggi yang cukup */
+    background-color: rgba(255, 255, 255, 0.393); 
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    top: 10px; 
+    left: 20px; 
+    right: 20px; 
+}
+
+.header .logo {
+    display: flex;
+    align-items: center; /* Pastikan logo sejajar vertikal */
+}
+
+.header .logo img {
+    height: 20px;
+    display: block;
+}
+
+.header-content {
+    flex: 1; /* Membantu navbar tetap di kanan */
+    display: flex;
+    justify-content: flex-end; /* Navbar akan bergerak ke kanan */
+}
+
+.header .navbar {
+    display: flex;
+    gap: 1rem; /* Beri jarak antar menu */
+}
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 0.9rem;
+    color: var(--hijautua);
+}
+
+.header .navbar a:hover {
+    color: var(--black);
+}
+
+
